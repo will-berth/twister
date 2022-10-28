@@ -1,5 +1,11 @@
+let url = windows.location.href;
+let swLocation = '/twister/sw.js';
+
 if(navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js');
+    if(url.includes('localhost')){
+        swLocation = '/sw.js';
+    }
+    navigator.serviceWorker.register(swLocation);
 }
 // Referencias de jQuery
 
