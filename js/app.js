@@ -1,4 +1,4 @@
-let url = windows.location.href;
+let url = window.location.href;
 let swLocation = '/twister/sw.js';
 
 if(navigator.serviceWorker){
